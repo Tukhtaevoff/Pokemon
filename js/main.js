@@ -121,7 +121,7 @@ window.addEventListener("DOMContentLoaded", function () {
     thirdBtn.addEventListener("click", function (event) {
         event.preventDefault();
         let shakes = products.map( function (item) {
-            if (item.category == "breakfast") {
+            if (item.category == "shakes") {
                 return `
                 <li class="list__item">
                 <img src="${item.img}">
