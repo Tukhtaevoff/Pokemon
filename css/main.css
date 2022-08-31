@@ -1,78 +1,111 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+* .section {
+  background-color: rgb(208, 208, 25);
+  width: 100%;
+  height: 100%;
+}
+* .section .image {
+  text-decoration: none;
+  width: 100vw;
+}
+* .section .image .image > img {
+  margin-left: 400px;
+}
+* .section .buttons {
+  padding-left: 250px;
+  margin-top: 50px;
+}
+* .section .buttons button {
+  width: 200px;
+  height: 50px;
+  border: 2px solid darkgoldenrod;
+  background: black;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 40px;
+}
+* .section .list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1400px;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+* .section .list .list__item {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 300px;
+  border: 2px solid white;
+  background-color: white;
+}
+* .section .list .list__item .list__item > img {
+  width: 295px;
+  margin: 0 auto;
+  height: 250px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+* .section .list .list__item .title {
+  font-size: 1.3rem;
+  color: blue;
+  padding: 20px 20px 5px;
+  text-align: center;
+}
+* .section .list .list__item .text {
+  font-size: 1rem;
+  color: blue;
+  padding: 5px 20px;
+  text-align: center;
+}
+* .section .list .list__item .span {
+  font-size: 1rem;
+  color: blue;
+  padding: 5px 20px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .image > img {
+    width: 300px;
+    margin: 20px 0px 0px 200px;
+  }
+  .buttons {
     padding: 0;
-}
-.section{
-    background-color: rgb(208, 208, 25);
-    width: 100%;
-    height: 100%;
-}
-
-.image {
-    text-decoration: none;
-    width: 100vw;
-}
-.image > img {
-    margin-left: 400px;
-}
-
-.buttons{
-    padding-left: 250px;
-    margin-top: 50px;
-}
-button{
-    width: 200px;
-    height: 50px;
-    border: 2px solid darkgoldenrod;
-    background: black;
-    color: white;
-    font-size: 1.3rem;
-    font-weight: 600;
-    cursor: pointer;
-    margin-left: 40px;
-}
-
-.list {
+    width: 750px;
+  }
+  .buttons button {
+    margin: 10px;
+  }
+  .list {
+    max-width: 700px;
     display: flex;
     flex-wrap: wrap;
-    width: 1400px;
-    margin: 0 auto;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 40px;
+  }
 }
-.list__item {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    width: 300px;
-    border: 2px solid white;
-    background-color: white;
-}
-.list__item > img{
-    width: 295px;
-    margin: 0 auto;
-    height: 250px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-.title {
-    font-size: 1.3rem;
-    color: blue;
-    padding: 20px 20px 5px;
-    text-align: center;
-}
-.text{
-    font-size: 1rem;
-    color: blue;
-    padding: 5px 20px;
-    text-align: center;
-}
-.span{
-    font-size: 1rem;
-    color: blue;
-    padding: 5px 20px;
-    text-align: center;
-}
+@media only screen and (max-width: 675px) {
+  .list {
+    max-width: 375px;
+  }
+  .image > img {
+    width: 250px;
+    margin: 30px 0px 0px 160px;
+  }
+  .buttons {
+    width: 450px;
+    padding: 0px;
+  }
+  .buttons button {
+    width: 150px;
+    height: 60px;
+  }
+}/*# sourceMappingURL=main.css.map */
