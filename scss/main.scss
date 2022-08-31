@@ -9,7 +9,7 @@
         .image {
             text-decoration: none;
             width: 100vw;
-            .image > img {
+            img {
                 margin-left: 400px;
             }
         }
@@ -44,7 +44,7 @@
                 width: 300px;
                 border: 2px solid white;
                 background-color: white;
-                .list__item > img{
+                img{
                     width: 295px;
                     margin: 0 auto;
                     height: 250px;
@@ -90,12 +90,18 @@
         max-width: 700px;
         display: flex;
         flex-wrap: wrap;
+        .list__item > img {
+            height: 250px;
+        }
     }
     
 }
 @media only screen and (max-width: 675px) {
     .list {
         max-width: 375px;
+        .list__item > img {
+            height: 250px;
+        }
     }
     .image > img {
         width: 250px;

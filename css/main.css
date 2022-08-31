@@ -12,7 +12,7 @@
   text-decoration: none;
   width: 100vw;
 }
-* .section .image .image > img {
+* .section .image img {
   margin-left: 400px;
 }
 * .section .buttons {
@@ -48,7 +48,7 @@
   border: 2px solid white;
   background-color: white;
 }
-* .section .list .list__item .list__item > img {
+* .section .list .list__item img {
   width: 295px;
   margin: 0 auto;
   height: 250px;
@@ -91,10 +91,16 @@
     display: flex;
     flex-wrap: wrap;
   }
+  .list .list__item > img {
+    height: 250px;
+  }
 }
 @media only screen and (max-width: 675px) {
   .list {
     max-width: 375px;
+  }
+  .list .list__item > img {
+    height: 250px;
   }
   .image > img {
     width: 250px;
